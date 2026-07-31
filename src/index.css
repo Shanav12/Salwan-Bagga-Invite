@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory:      #faf7f0;
+  --color-ivory-dark: #f0ead8;
+  --color-gold:       #b8974a;
+  --color-gold-light: #d4af68;
+  --color-gold-dark:  #8c6e2f;
+  --color-warm-dark:  #3a2e1e;
+  --color-warm-darker: #251c10;
+
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sc:    'Cormorant SC', serif;
+  --font-sans:  'Jost', sans-serif;
+  --font-prata: 'Prata', serif;
+}
