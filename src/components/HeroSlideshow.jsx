@@ -1,21 +1,18 @@
 import { useState, useEffect } from 'react'
 
+const base = import.meta.env.BASE_URL
 const photos = [
-  '/sahilambika0.webp',
-  '/sahilambika1.webp',
-  '/sahilambika2.webp',
-  '/sahilambika0.webp',
-  '/sahilambika1.webp',
-  '/sahilambika0.webp',
-  '/sahilambika1.webp',
-  '/sahilambika2.webp',
-  '/sahilambika0.webp',
-  '/sahilambika1.webp',
-  '/sahilambika0.webp',
-  '/sahilambika1.webp',
-  '/sahilambika2.webp',
-  '/sahilambika0.webp',
-  '/sahilambika1.webp'
+  `${base}sahilambika0.webp`,
+  `${base}sahilambika1.webp`,
+  `${base}sahilambika2.webp`,
+  `${base}sahilambika0.webp`,
+  `${base}sahilambika1.webp`,
+  `${base}sahilambika0.webp`,
+  `${base}sahilambika1.webp`,
+  `${base}sahilambika2.webp`,
+  `${base}sahilambika0.webp`,
+  `${base}sahilambika1.webp`,
+  `${base}sahilambika0.webp`,
 ]
 
 const SLIDE_DURATION = 500
@@ -30,21 +27,25 @@ export const HeroSlideshow = ({ onDone }) => {
   useEffect(() => {
     const totalSlides = photos.length
     let slide = 0
+    let cancelled = false
 
     const next = () => {
+      if (cancelled) return
       slide++
       if (slide >= totalSlides) {
         setTimeout(() => {
+          if (cancelled) return
           setExiting(true)
           setTimeout(onDone, 700)
         }, SLIDE_DURATION)
         return
       }
-      // flash white, swap photo, flash off
       setFlashing(true)
       setTimeout(() => {
+        if (cancelled) return
         setCurrent(slide)
         setTimeout(() => {
+          if (cancelled) return
           setFlashing(false)
           setTimeout(next, SLIDE_DURATION)
         }, FLASH_DURATION)
@@ -52,7 +53,7 @@ export const HeroSlideshow = ({ onDone }) => {
     }
 
     const timer = setTimeout(next, SLIDE_DURATION)
-    return () => clearTimeout(timer)
+    return () => { cancelled = true; clearTimeout(timer) }
   }, [onDone])
 
   return (
