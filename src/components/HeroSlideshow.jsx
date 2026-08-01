@@ -79,7 +79,7 @@ export const HeroSlideshow = ({ onDone }) => {
 
         {/* text */}
         <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 px-6 text-center">
-          <p className="font-prata text-xs tracking-[0.25em] uppercase text-gold-light mb-2">
+          <p className="font-prata text-[clamp(0.65rem,2.4vw,0.75rem)] tracking-[0.25em] uppercase text-gold-light mb-2">
             You're Invited
           </p>
           <p className="font-prata font-light text-[clamp(15px,3vw,22px)] tracking-widest text-ivory/90 mb-1">
@@ -88,7 +88,7 @@ export const HeroSlideshow = ({ onDone }) => {
           <h1 className="font-prata italic text-[clamp(52px,12vw,96px)] leading-none tracking-wide text-gold-light mb-4">
             Cabo
           </h1>
-          <p className="font-prata font-light text-xs tracking-[0.2em] text-ivory/60">
+          <p className="font-prata font-light text-[clamp(0.65rem,2.4vw,0.75rem)] tracking-[0.2em] text-ivory/60">
             Ambika &amp; Sahil · June 2027
           </p>
         </div>

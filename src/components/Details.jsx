@@ -8,7 +8,7 @@ export const Details = () => {
                 <div className="flex flex-col items-center gap-4">
                     <a
                     href="https://www.salwanbaggashaadi.com/"
-                    className="font-prata font-normal text-[11px] tracking-[0.2em] uppercase text-gold-dark pb-1.5 border-b border-gold-light hover:text-gold hover:border-gold transition-colors"
+                    className="font-prata font-normal text-[clamp(0.65rem,2.4vw,0.6875rem)] tracking-[0.2em] uppercase text-gold-dark pb-1.5 border-b border-gold-light hover:text-gold hover:border-gold transition-colors"
                     >
                     Wedding Website + RSVP
                     </a>

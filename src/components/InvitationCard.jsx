@@ -1,50 +1,47 @@
+import ambikaSahil from "../assets/ambika-Sahil.png"
+import inviteBg from "../assets/invite-bg2.jpg"
+import { IoLocation } from "react-icons/io5";
+
 export const InvitationCard = () => {
     return (
         <section className="relative min-h-svh flex items-center justify-center px-6 py-16 overflow-hidden">
+            <div className="absolute inset-0 bg-[#fdf4f4]" />
             <div
-            className="absolute inset-0"
-            style={{
-                background: `
-                radial-gradient(ellipse at 20% 80%, rgba(139,53,53,0.10) 0%, transparent 55%),
-                radial-gradient(ellipse at 80% 10%, rgba(184,151,74,0.08) 0%, transparent 50%),
-                linear-gradient(160deg, #f5eaea 0%, #faf0f0 40%, #f0e0e0 100%)
-                `,
-            }}
-            />
-            <div
-                className="relative z-10 flex flex-col w-full max-w-[420px] px-12 pt-14 pb-13 text-left"
+                className="relative z-10 flex flex-col w-full max-w-[420px] px-[clamp(1.5rem,8vw,3rem)] pt-[clamp(3rem,7vw,4rem)] pb-[clamp(3rem,6vw,3.5rem)] text-left"
                 style={{
-                    background: 'linear-gradient(160deg, #fefcf7 0%, #faf6ec 100%)',
                     border: '1px solid rgba(184,151,74,0.25)',
                     boxShadow: '0 4px 6px rgba(74,10,10,0.06), 0 20px 60px rgba(74,10,10,0.14), 0 0 0 1px rgba(255,255,255,0.8) inset',
                 }}
                 >
-                <span className="text-gold text-lg tracking-[0.25em] mb-5">✦</span>
 
-                <h1 className="font-prata italic font-light text-[clamp(52px,12vw,72px)] leading-none tracking-wide text-[#1a0505] mb-5">
-                    SAHIL<br />and<br />AMBIKA
-                </h1>
+                 <div className="flex justify-left mb-6">
+                    <img 
+                        src={ambikaSahil} 
+                        alt="Ambika & Sahil"
+                        className="w-full max-w-sm md:max-w-md h-auto object-contain"
+                    />
+                </div>
 
-                <p className="font-prata font-light text-[10px] tracking-[0.18em] text-[#8B3535] uppercase mb-8">
+                <p className="font-prata font-light text-[clamp(0.6rem,2.2vw,0.625rem)] tracking-[0.18em] text-[#8B3535] uppercase mb-8">
                     invite you to celebrate their marriage
                 </p>
 
                 <div className="w-10 h-px bg-gold mb-7" />
 
-                <p className="font-prata font-normal text-xs tracking-[0.12em] text-[#1a0505] mb-2.5">
+                <p className="font-prata font-normal text-[clamp(0.7rem,2.6vw,0.75rem)] tracking-[0.12em] text-[#1a0505] mb-2.5">
                     June 3 – 5, 2027
                 </p>
 
-                <p className="font-prata font-light text-[11px] tracking-[0.1em] text-[#8B3535] leading-7 mb-10">
+                <p className="font-prata font-light text-[clamp(0.65rem,2.4vw,0.6875rem)] tracking-[0.1em] text-[#8B3535] leading-7 mb-15">
                     Hard Rock Los Cabos<br />
-                    Los Cabos, Mexico
+                    <span className="inline-flex items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span>
                 </p>
 
                 <div className="text-right mt-auto">
-                    <p className="font-prata font-normal text-[11px] tracking-[0.15em] uppercase text-[#8B3535] mb-1">
+                    <p className="font-prata font-normal text-[clamp(0.65rem,2.4vw,0.6875rem)] tracking-[0.15em] uppercase text-[#8B3535] mb-1">
                     Please RSVP by
                     </p>
-                    <p className="font-serif font-normal text-xl tracking-wide text-gold-dark">
+                    <p className="font-serif font-normal text-[clamp(1rem,4vw,1.25rem)] tracking-wide text-gold-dark">
                     January 1st, 2027
                     </p>
                 </div>

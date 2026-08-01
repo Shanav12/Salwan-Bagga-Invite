@@ -6,6 +6,7 @@ import { Greeting } from './components/Greeting'
 import { Info } from './components/Info'
 import { Details } from './components/Details'
 
+
 export default function App() {
   const guestName = new URLSearchParams(window.location.search).get('guest')
   // const [introDone, setIntroDone] = useState(false)
