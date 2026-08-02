@@ -61,7 +61,7 @@ export const HeroSlideshow = ({ onDone }) => {
         key={current}
         src={photos[current]}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        className="absolute inset-0 w-full h-full object-cover object-[center_40%]"
       />
 
       {/* dark overlay — heavier at bottom for legibility */}
@@ -78,19 +78,19 @@ export const HeroSlideshow = ({ onDone }) => {
         style={{ paddingBottom: 'max(4rem, env(safe-area-inset-bottom, 0px) + 2rem)' }}
       >
         <p
-          className="font-prata text-[clamp(1rem,2vw,1.5rem)] text-gold-light tracking-[0.3em] uppercase mb-2"
+          className="font-prata text-[clamp(0.65rem,3.5vw,1.5rem)] text-gold-light tracking-[0.2em] uppercase mb-2"
           style={{ textShadow: '0 1px 6px rgba(0,0,0,0.7)' }}
         >
           <strong>You're Invited</strong>
         </p>
         <p
-          className="font-prata font-light text-[clamp(15px,2.5vw,24px)] tracking-widest text-white/90 mb-1"
+          className="font-prata font-light text-[clamp(0.75rem,3.5vw,1.5rem)] tracking-[0.15em] text-white/90 mb-1"
           style={{ textShadow: '0 1px 6px rgba(0,0,0,0.7)' }}
         >
           Welcome to
         </p>
         <h1
-          className="italic text-[clamp(52px,10vw,100px)] leading-none tracking-wide text-gold-light mb-4 transition-all duration-300"
+          className="italic text-[clamp(2.8rem,13vw,6.25rem)] leading-none tracking-normal text-gold-light mb-4 transition-all duration-300"
           style={{
             fontFamily: TITLE_FONTS[current % TITLE_FONTS.length],
             textShadow: '0 2px 16px rgba(0,0,0,0.6)',
@@ -99,7 +99,7 @@ export const HeroSlideshow = ({ onDone }) => {
           Los Cabos
         </h1>
         <p
-          className="font-prata font-light text-[clamp(0.65rem,1.8vw,0.85rem)] tracking-[0.25em] text-white/80"
+          className="font-prata font-light text-[clamp(0.6rem,2.5vw,0.85rem)] tracking-[0.2em] text-white/80"
           style={{ textShadow: '0 1px 6px rgba(0,0,0,0.7)' }}
         >
           Ambika &amp; Sahil · June 2027

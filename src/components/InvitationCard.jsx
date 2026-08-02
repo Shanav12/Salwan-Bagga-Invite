@@ -5,10 +5,10 @@ import { IoLocation } from "react-icons/io5";
 
 export const InvitationCard = () => {
     return (
-        <section className="relative flex items-start justify-center px-6 pt-10 md:pt-20 pb-12 overflow-hidden">
+        <section className="relative flex items-start justify-center px-6 pt-20 pb-12 overflow-hidden">
             <div className="absolute inset-0" style={{ backgroundImage: `url(${roseBg})`, backgroundSize: 'cover', backgroundPosition: 'center top' }} />
             <div
-                className="relative z-10 flex flex-col w-full max-w-[420px] px-[clamp(1.5rem,8vw,3rem)] pt-[clamp(3rem,7vw,4rem)] pb-[clamp(3rem,6vw,3.5rem)] text-left rounded-lg"
+                className="relative z-10 flex flex-col w-full max-w-[420px] px-[clamp(1.5rem,8vw,3rem)] pt-[clamp(3rem,7vw,4rem)] pb-[clamp(5rem,6vw,3.5rem)] text-left rounded-lg"
                 style={{
                     backgroundColor: 'rgba(255,255,255,0.75)',
                     backdropFilter: 'blur(6px)',
