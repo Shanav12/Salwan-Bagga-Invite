@@ -1,6 +1,6 @@
 export const Details = () => {
     return (
-        <div className="mb-5">
+        <div className="">
             <section className="bg-[#faf0e6] border-t border-gold/12 py-16 px-6 text-center">
                 <h2 className="font-prata text-[clamp(28px,5vw,40px)] tracking-wide mb-8">
                 Details + Information
@@ -15,9 +15,9 @@ export const Details = () => {
                 </div>
             </section>
 
-            {/* <footer className="bg-warm-darker py-6 px-6 text-center font-normal font-gold-light font-prata text-xs tracking-[0.12em] uppercase">
+            <footer className="bg-warm-darker py-6 px-6 text-center font-normal text-gold-light font-prata text-xs tracking-[0.12em] uppercase">
                 Sahil &amp; Ambika · June 2027 · Los Cabos
-            </footer> */}
+            </footer>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { HeroSlideshow } from './components/HeroSlideshow'
+import { HeroSlideshow } from './components/IntroSlideshow'
 import { InvitationCard } from './components/InvitationCard'
 import { Greeting } from './components/Greeting'
 import { Info } from './components/Info'
