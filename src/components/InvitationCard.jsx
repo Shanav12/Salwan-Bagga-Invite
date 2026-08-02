@@ -1,14 +1,17 @@
 import ambikaSahil from "../assets/ambika-Sahil.png"
-import inviteBg from "../assets/invite-bg2.jpg"
+import roseBg from "../assets/rosegBg.jpg"
 import { IoLocation } from "react-icons/io5";
+
 
 export const InvitationCard = () => {
     return (
-        <section className="relative min-h-svh flex items-center justify-center px-6 py-16 overflow-hidden">
-            <div className="absolute inset-0 bg-[#fdf4f4]" />
+        <section className="relative flex items-start justify-center px-6 pt-10 md:pt-20 pb-12 overflow-hidden">
+            <div className="absolute inset-0" style={{ backgroundImage: `url(${roseBg})`, backgroundSize: 'cover', backgroundPosition: 'center top' }} />
             <div
-                className="relative z-10 flex flex-col w-full max-w-[420px] px-[clamp(1.5rem,8vw,3rem)] pt-[clamp(3rem,7vw,4rem)] pb-[clamp(3rem,6vw,3.5rem)] text-left"
+                className="relative z-10 flex flex-col w-full max-w-[420px] px-[clamp(1.5rem,8vw,3rem)] pt-[clamp(3rem,7vw,4rem)] pb-[clamp(3rem,6vw,3.5rem)] text-left rounded-lg"
                 style={{
+                    backgroundColor: 'rgba(255,255,255,0.75)',
+                    backdropFilter: 'blur(6px)',
                     border: '1px solid rgba(184,151,74,0.25)',
                     boxShadow: '0 4px 6px rgba(74,10,10,0.06), 0 20px 60px rgba(74,10,10,0.14), 0 0 0 1px rgba(255,255,255,0.8) inset',
                 }}

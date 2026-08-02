@@ -16,7 +16,7 @@ export const Details = () => {
             </section>
 
             <footer className="bg-warm-darker py-6 px-6 text-center font-normal text-gold-light font-prata text-xs tracking-[0.12em] uppercase">
-                Sahil &amp; Ambika · June 2027 · Los Cabos
+                Ambika &amp; Sahil · June 2027 · Los Cabos
             </footer>
         </div>
     )

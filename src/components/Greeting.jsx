@@ -6,7 +6,7 @@ export const Greeting = ({guestName}) => {
                 {guestName ?? 'Our Dearest Guests'}
             </p>
             <p className="font-prata font-light text-[clamp(0.75rem,2.8vw,0.8125rem)] tracking-[0.18em] text-[#8B3535] uppercase mb-3.5">
-                Sahil &amp; Ambika&apos;s Wedding
+                Ambika &amp; Sahil&apos;s Wedding
             </p>
             {guestName && (
             <p className="font-prata italic text-[clamp(0.875rem,3vw,1rem)] text-[#8B3535]">

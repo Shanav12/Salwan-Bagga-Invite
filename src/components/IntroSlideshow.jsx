@@ -2,19 +2,16 @@ import { useState, useEffect } from 'react'
 
 const base = import.meta.env.BASE_URL
 const photos = [
-  `${base}hr_cloudinary.jpg`,
+  // `${base}hr_cloudinary.jpg`,
   `${base}hr_flyby.jpg`,
-  `${base}hr_aerial1.jpg`,
-  `${base}hr_pool_beach.jpg`
+  // `${base}hr_aerial1.jpg`,
+  // `${base}hr_pool_beach.jpg`
 ]
 
-const SLIDE_DURATION = 1000
-const FLASH_DURATION = 20
+const SLIDE_DURATION = 1750
+const FLASH_DURATION = 50
 
 const TITLE_FONTS = [
-  "'Playfair Display', serif",
-  "'Libre Baskerville', serif",
-  "'Lora', serif",
   "'EB Garamond', serif",
 ]
 
@@ -36,7 +33,7 @@ export const HeroSlideshow = ({ onDone }) => {
         setTimeout(() => {
           if (cancelled) return
           setExiting(true)
-          setTimeout(onDone, 700)
+          setTimeout(onDone, 400)
         }, SLIDE_DURATION)
         return
       }
@@ -76,7 +73,6 @@ export const HeroSlideshow = ({ onDone }) => {
         style={{ opacity: flashing ? 1 : 0, transitionDuration: `${FLASH_DURATION}ms` }}
       />
 
-      {/* text */}
       <div
         className="absolute inset-0 flex flex-col items-center justify-end px-6 text-center"
         style={{ paddingBottom: 'max(4rem, env(safe-area-inset-bottom, 0px) + 2rem)' }}
@@ -85,7 +81,7 @@ export const HeroSlideshow = ({ onDone }) => {
           className="font-prata text-[clamp(1rem,2vw,1.5rem)] text-gold-light tracking-[0.3em] uppercase mb-2"
           style={{ textShadow: '0 1px 6px rgba(0,0,0,0.7)' }}
         >
-          You're Invited
+          <strong>You're Invited</strong>
         </p>
         <p
           className="font-prata font-light text-[clamp(15px,2.5vw,24px)] tracking-widest text-white/90 mb-1"
