@@ -15,7 +15,6 @@ const TITLE_FONTS = [
   "'EB Garamond', serif",
 ]
 
-
 export const HeroSlideshow = ({ onDone }) => {
   const [current, setCurrent] = useState(0)
   const [flashing, setFlashing] = useState(false)

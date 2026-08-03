@@ -1,14 +1,12 @@
 import ambikaSahil from "../assets/ambika-Sahil.png"
-import roseBg from "../assets/rosegBg.jpg"
 import { IoLocation } from "react-icons/io5";
 
 
 export const InvitationCard = () => {
     return (
-        <section className="relative flex items-start justify-center px-6 pt-20 pb-12 overflow-hidden">
-            <div className="absolute inset-0" style={{ backgroundImage: `url(${roseBg})`, backgroundSize: 'cover', backgroundPosition: 'center top' }} />
+        <section className="relative flex items-start justify-center px-4 pb-10 overflow-hidden bg-[#dbeafe]">
             <div
-                className="relative z-10 flex flex-col w-full max-w-[420px] px-[clamp(1.5rem,8vw,3rem)] pt-[clamp(3rem,7vw,4rem)] pb-[clamp(5rem,6vw,3.5rem)] text-left rounded-lg"
+                className="relative z-10 flex flex-col w-full max-w-[420px] px-6 sm:px-10 pt-8 sm:pt-12 pb-8 text-left rounded-lg"
                 style={{
                     backgroundColor: 'rgba(255,255,255,0.75)',
                     backdropFilter: 'blur(6px)',
@@ -17,35 +15,39 @@ export const InvitationCard = () => {
                 }}
                 >
 
-                 <div className="flex justify-left mb-6">
-                    <img 
-                        src={ambikaSahil} 
+                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6">
+                    With the blessings of the almighty & our revered elders
+                </p>
+
+                <div className="flex justify-left mb-6">
+                    <img
+                        src={ambikaSahil}
                         alt="Ambika & Sahil"
-                        className="w-full max-w-sm md:max-w-md h-auto object-contain"
+                        className="w-full h-auto object-contain"
                     />
                 </div>
 
-                <p className="font-prata font-light text-[clamp(0.6rem,2.2vw,0.625rem)] tracking-[0.18em] text-[#8B3535] uppercase mb-8">
-                    invite you to celebrate their marriage
+                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6">
+                    request your gracious presence for their wedding festivities
                 </p>
 
-                <div className="w-10 h-px bg-gold mb-7" />
+                <div className="w-10 h-px bg-gold mb-6" />
 
-                <p className="font-prata font-normal text-[clamp(0.7rem,2.6vw,0.75rem)] tracking-[0.12em] text-[#1a0505] mb-2.5">
+                <p className="font-prata font-normal text-[0.8125rem] sm:text-[0.75rem] tracking-[0.12em] text-[#1a0505] mb-2">
                     June 3 – 5, 2027
                 </p>
 
-                <p className="font-prata font-light text-[clamp(0.65rem,2.4vw,0.6875rem)] tracking-[0.1em] text-[#8B3535] leading-7 mb-15">
+                <p className="font-prata font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-8">
                     Hard Rock Los Cabos<br />
                     <span className="inline-flex items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span>
                 </p>
 
                 <div className="text-right mt-auto">
-                    <p className="font-prata font-normal text-[clamp(0.65rem,2.4vw,0.6875rem)] tracking-[0.15em] uppercase text-[#8B3535] mb-1">
-                    Please RSVP by
+                    <p className="font-prata font-normal text-[0.75rem] sm:text-[0.6875rem] tracking-[0.15em] uppercase text-gold mb-1">
+                        Please RSVP by
                     </p>
-                    <p className="font-serif font-normal text-[clamp(1rem,4vw,1.25rem)] tracking-wide text-gold-dark">
-                    January 1st, 2027
+                    <p className="font-serif font-normal text-[1.125rem] sm:text-[1.25rem] tracking-wide text-gold-dark">
+                        December 15th, 2026
                     </p>
                 </div>
             </div>
