@@ -6,7 +6,7 @@ export const InvitationCard = () => {
     return (
         <section className="relative flex items-start justify-center px-4 pb-10 overflow-hidden bg-[#dbeafe]">
             <div
-                className="relative z-10 flex flex-col w-full max-w-[420px] px-6 sm:px-10 pt-10 pb-14 text-left rounded-lg"
+                className="relative z-10 flex flex-col w-full max-w-[420px] px-6 sm:px-10 pt-10 pb-10 text-left rounded-lg"
 
                 style={{
                     backgroundColor: 'rgba(255,255,255,0.75)',
@@ -28,7 +28,7 @@ export const InvitationCard = () => {
                     />
                 </div>
 
-                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6">
+                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-8">
                     request your gracious presence for their wedding festivities
                 </p>
 
@@ -38,7 +38,7 @@ export const InvitationCard = () => {
                     June 3 – 5, 2027
                 </p>
 
-                <p className="font-prata italic inline-flex items-center gap-0.5 font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-8">
+                <p className="font-prata italic inline-flex items-center gap-0.5 font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-10">
                     Hard Rock Los Cabos<IoLocation size={16} style={{ marginBottom: '7px' }} />
                     {/* <span className="inline-flex text-black items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span> */}
                 </p>
