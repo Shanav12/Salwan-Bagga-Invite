@@ -1,5 +1,6 @@
 import ambikaSahil from "../assets/ambika-Sahil.png"
 import { IoLocation } from "react-icons/io5";
+import ganeshJi from "../assets/lordGanesh.jpg"
 
 
 export const InvitationCard = () => {
@@ -9,14 +10,19 @@ export const InvitationCard = () => {
                 className="relative z-10 flex flex-col w-full max-w-[420px] px-6 sm:px-10 pt-10 pb-10 text-left rounded-lg"
 
                 style={{
-                    backgroundColor: 'rgba(255,255,255,0.75)',
-                    backdropFilter: 'blur(6px)',
+                    backgroundColor: 'rgba(255,255,255,1)',
                     border: '1px solid rgba(184,151,74,0.25)',
-                    boxShadow: '0 4px 6px rgba(74,10,10,0.06), 0 20px 60px rgba(74,10,10,0.14), 0 0 0 1px rgba(255,255,255,0.8) inset',
+                    boxShadow: '0 4px 6px rgba(74,10,10,0.06), 0 20px 60px rgba(74,10,10,0.14), 0 0 0 1px rgba(255,255,255,1) inset',
                 }}
                 >
+                <img
+                    src={ganeshJi}
+                    alt=""
+                    aria-hidden="true"
+                    className="absolute top-4 right-4 w-8 sm:w-10 mb-5 h-auto object-contain pointer-events-none opacity-50"
+                />
 
-                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6">
+                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6 pr-8 sm:pr-10">
                     With the blessings of the almighty & our revered elders
                 </p>
 
