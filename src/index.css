@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html, body, #root {
+  background-color: #dbeafe;
+}
+
 @theme {
   --color-ivory:      #faf7f0;
   --color-ivory-dark: #f0ead8;

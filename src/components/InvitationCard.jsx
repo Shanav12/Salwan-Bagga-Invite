@@ -23,7 +23,7 @@ export const InvitationCard = () => {
                 />
 
                 <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6 pr-8 sm:pr-10">
-                    With the blessings of the almighty & our revered elders
+                    With the blessings of the almighty and our revered elders
                 </p>
 
                 <div className="flex justify-left mb-6">
