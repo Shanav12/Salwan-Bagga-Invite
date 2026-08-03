@@ -1,7 +1,7 @@
 export const Details = () => {
     return (
         <div className="">
-            <section className="bg-[#dbeafe] border-t border-gold/12 py-16 px-6 text-center">
+            <section className="bg-[#dbeafe] border-t border-gold/12 py-12 px-6 text-center">
                 <h2 className="font-prata text-[clamp(28px,5vw,40px)] tracking-wide mb-8">
                 Details & Information
                 </h2>
@@ -12,7 +12,7 @@ export const Details = () => {
                     If you have any questions regarding RSVPs, please reach out to{' '}
                     <a
                     href="mailto:support@shaadidestinations.com"
-                    className="text-gold-light border-b border-gold-light/40 hover:border-gold-light transition-colors"
+                    className="text-gold border-b border-gold-light/40 hover:border-gold-light transition-colors"
                     >
                     support@shaadidestinations.com
                     </a>
@@ -21,7 +21,7 @@ export const Details = () => {
                 <div className="flex flex-col items-center gap-4 mb-5">
                     <a
                     href="https://www.salwanbaggashaadi.com/#/wedding-logistics"
-                    className="font-prata font-normal text-[clamp(0.65rem,2.4vw,0.6875rem)] tracking-[0.2em] uppercase text-gold-dark pb-1.5 border-b border-gold-light hover:text-gold hover:border-gold transition-colors"
+                    className="font-prata italic font-normal text-[clamp(0.75rem,2.4vw,0.6875rem)] tracking-[0.2em] uppercase text-gold-dark border-b border-gold-light hover:text-gold hover:border-gold transition-colors"
                     >
                     Please RSVP to our wedding
                     </a>

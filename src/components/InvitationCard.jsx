@@ -6,7 +6,8 @@ export const InvitationCard = () => {
     return (
         <section className="relative flex items-start justify-center px-4 pb-10 overflow-hidden bg-[#dbeafe]">
             <div
-                className="relative z-10 flex flex-col w-full max-w-[420px] px-6 sm:px-10 pt-8 sm:pt-12 pb-8 text-left rounded-lg"
+                className="relative z-10 flex flex-col w-full max-w-[420px] px-6 sm:px-10 pt-10 pb-14 text-left rounded-lg"
+
                 style={{
                     backgroundColor: 'rgba(255,255,255,0.75)',
                     backdropFilter: 'blur(6px)',
@@ -37,13 +38,13 @@ export const InvitationCard = () => {
                     June 3 – 5, 2027
                 </p>
 
-                <p className="font-prata font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-8">
-                    Hard Rock Los Cabos<br />
-                    <span className="inline-flex items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span>
+                <p className="font-prata italic inline-flex items-center gap-0.5 font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-8">
+                    Hard Rock Los Cabos<IoLocation size={16} style={{ marginBottom: '7px' }} />
+                    {/* <span className="inline-flex text-black items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span> */}
                 </p>
 
                 <div className="text-right mt-auto">
-                    <p className="font-prata font-normal text-[0.75rem] sm:text-[0.6875rem] tracking-[0.15em] uppercase text-gold mb-1">
+                    <p className="font-prata font-normal text-[0.75rem] sm:text-[0.6875rem] tracking-[0.15em] uppercase mb-1">
                         Please RSVP by
                     </p>
                     <p className="font-serif font-normal text-[1.125rem] sm:text-[1.25rem] tracking-wide text-gold-dark">

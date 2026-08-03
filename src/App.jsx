@@ -14,7 +14,7 @@ export default function App() {
     <>
       {!introDone && <HeroSlideshow onDone={() => setIntroDone(true)} />}
       <div
-        className={`min-h-screen flex flex-col bg-[#faf0e6] font-prata text-[#1a0505] transition-opacity duration-700 ${introDone ? 'opacity-100' : 'opacity-0'}`}
+        className={`min-h-screen flex flex-col bg-[#dbeafe] font-prata text-[#1a0505] transition-opacity duration-700 ${introDone ? 'opacity-100' : 'opacity-0'}`}
       >
         <Greeting guestName={guestName}/>
         <InvitationCard/>
