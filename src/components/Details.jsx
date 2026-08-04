@@ -14,7 +14,7 @@ export const Details = () => {
                     Click the button below to visit the wedding website and RSVP.
                 </p>
                 <p className="font-prata font-light text-[clamp(0.8125rem,2.6vw,1rem)] mb-16 leading-[1.9] tracking-wide mb-5">
-                    If you have any questions regarding RSVPs, please reach out to{' '}
+                    If you have any questions regarding RSVPs, please reach out to:{' '}
                     <a
                     href="mailto:support@shaadidestinations.com"
                     className="text-gold border-b border-gold-light/40 hover:border-gold-light transition-colors"
@@ -31,7 +31,7 @@ export const Details = () => {
                     </button>
                 </div>
                 <p
-                    className="font-prata font-normal text-[clamp(0.75rem,2.6vw,0.8125rem)] mb-25 tracking-[0.2em]"
+                    className="font-prata font-normal text-[clamp(0.8rem,2.6vw,0.8125rem)] mb-25 tracking-[0.15em]"
                 >
                 Password: ambikasahil
                 </p>

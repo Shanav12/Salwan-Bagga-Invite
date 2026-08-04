@@ -19,11 +19,11 @@ export const InvitationCard = () => {
                     src={ganeshJi}
                     alt=""
                     aria-hidden="true"
-                    className="absolute top-4 right-4 w-8 sm:w-10 mb-5 h-auto object-contain pointer-events-none opacity-50"
+                    className="absolute top-1 right-1 w-10 sm:w-12 h-auto object-contain pointer-events-none opacity-50"
                 />
 
-                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-6 pr-8 sm:pr-10">
-                    With the blessings of the almighty and our revered elders
+                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.725rem] tracking-[0.18em] text-gold uppercase mb-6 pr-8 sm:pr-10">
+                    With the blessings of the almighty & our revered elders
                 </p>
 
                 <div className="flex justify-left mb-6">
@@ -34,18 +34,18 @@ export const InvitationCard = () => {
                     />
                 </div>
 
-                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.625rem] tracking-[0.18em] text-gold uppercase mb-8">
+                <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.725rem] tracking-[0.18em] text-gold uppercase mb-8">
                     request your gracious presence for their wedding festivities
                 </p>
 
                 <div className="w-10 h-px bg-gold mb-6" />
 
-                <p className="font-prata font-normal text-[0.8125rem] sm:text-[0.75rem] tracking-[0.12em] text-[#1a0505] mb-2">
+                <p className="font-prata font-normal text-[0.8125rem] sm:text-[0.8rem] tracking-[0.12em] text-[#1a0505] mb-2">
                     June 3 – 5, 2027
                 </p>
 
                 <p className="font-prata italic inline-flex items-center gap-0.5 font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-10">
-                    Hard Rock Los Cabos<IoLocation size={16} style={{ marginBottom: '7px' }} />
+                    Hard Rock Los Cabos<IoLocation size={20} style={{ marginBottom: '7px' }} />
                     {/* <span className="inline-flex text-black items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span> */}
                 </p>
 
@@ -53,7 +53,7 @@ export const InvitationCard = () => {
                     <p className="font-prata font-normal text-[0.75rem] sm:text-[0.6875rem] tracking-[0.15em] uppercase mb-1">
                         Please RSVP by
                     </p>
-                    <p className="font-serif font-normal text-[1.125rem] sm:text-[1.25rem] tracking-wide text-gold-dark">
+                    <p className="font-serif font-normal text-[1.125rem] sm:text-[1.125rem] tracking-wide text-gold-dark">
                         December 15th, 2026
                     </p>
                 </div>
