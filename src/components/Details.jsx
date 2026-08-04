@@ -3,7 +3,7 @@ export const Details = () => {
         <div className="">
             <section className="bg-[#dbeafe] border-t border-gold/12 py-12 px-6 text-center">
                 <h2 className="font-prata text-[clamp(28px,5vw,40px)] tracking-wide">
-                Details & Information
+                RSVP Information
                 </h2>
                 <div className="flex items-center justify-center gap-4 mb-12">
                     <span className="h-px w-16 md:w-24 bg-[#8c6e2f]"></span>

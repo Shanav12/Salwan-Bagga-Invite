@@ -1,19 +1,43 @@
-import ganeshJi from "../assets/ganesh-Ji.png"
+import { useEffect, useState } from "react"
 
 
-export const Greeting = ({guestName}) => {
+
+export const Greeting = ({ guestName }) => {
+    const [visible, setVisible] = useState(false)
+
+    useEffect(() => {
+        const t = setTimeout(() => setVisible(true), 100)
+        return () => clearTimeout(t)
+    }, [])
+
     return (
-        <section className="bg-[#dbeafe] border-t border-gold/15 py-10 px-6 text-center">
-            {/* <img
-                src={ganeshJi}
-                alt=""
-                aria-hidden="true"
-                className="absolute top-3 right-3 w-12 sm:w-16 h-auto object-contain pointer-events-none opacity-30"
-            /> */}
-            <p className="font-prata  text-[clamp(1.125rem,4vw,1.375rem)] mb-3">To</p>
-            <p className="font-prata italic font-normal text-gold-dark text-[clamp(28px,6vw,42px)] tracking-wide text-[#1a0505]">
-                {guestName ?? 'Our Dearest Guests'}
+        <section
+            className="relative py-14 px-6 text-center overflow-hidden"
+        >
+            <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                    background: "radial-gradient(ellipse 70% 60% at 50% 60%, rgba(184,151,74,0.10) 0%, transparent 80%)",
+                }}
+            />
+
+            <p className="font-prata text-[12px] uppercase tracking-[0.25em] opacity-70 mb-4">
+                <strong>To</strong>
             </p>
+
+            <p
+                className="font-prata italic font-normal text-[clamp(24px,7vw,48px)] tracking-wide text-gold-dark transition-all duration-1000 ease-out"
+                style={{
+                    opacity: visible ? 1 : 0,
+                    transform: visible ? "translateY(0)" : "translateY(18px)",
+                    textShadow: visible
+                        ? "0 0 22px rgba(184,151,74,0.45), 0 2px 8px rgba(140,110,47,0.18)"
+                        : "none",
+                }}
+            >
+                {guestName ?? "Our Dearest Guests"}
+            </p>
+
         </section>
     )
 }
