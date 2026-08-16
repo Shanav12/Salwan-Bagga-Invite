@@ -19,12 +19,14 @@ export const LandingPage = ({ onDone }) => {
     <div
       className={`fixed inset-0 z-50 bg-black transition-opacity duration-700 ${exiting ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
     >
-      <img
-        src={`${base}cabo4.webp`}
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ objectPosition: 'center 45%', aspectRatio: '16 / 9' }}
-      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          src={`${base}cabo4.webp`}
+          alt=""
+          className="w-full h-full md:w-auto md:h-full md:max-w-7xl object-cover"
+          style={{ objectPosition: 'center 60%' }}
+        />
+      </div>
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/40 to-black/20" />
 
@@ -34,7 +36,7 @@ export const LandingPage = ({ onDone }) => {
         style={{ paddingTop: 'max(4rem, env(safe-area-inset-top, 0px) + 4rem)', paddingBottom: 'max(4rem, env(safe-area-inset-bottom, 0px) + 2rem)' }}
       >
         <p
-          className="font-prata italic text-[clamp(2rem,6vw,3.5rem)] text-gold-light tracking-[0.12em] uppercase mb-2 mt-12 md:mt-0"
+          className="font-prata italic text-[clamp(2rem,6vw,2.75rem)] text-gold-light tracking-[0.12em] uppercase mb-2 mt-12 md:mt-0"
           style={{ textShadow: '0 2px 16px rgba(0,0,0,0.6)' }}
         >
           <strong>You're Invited</strong>
@@ -47,7 +49,7 @@ export const LandingPage = ({ onDone }) => {
           Welcome to
         </p>
         <h1
-          className="italic text-[clamp(2.8rem,13vw,6.25rem)] leading-none tracking-normal text-gold-light mb-4"
+          className="italic text-[clamp(2.8rem,13vw,5.25rem)] leading-none tracking-normal text-gold-light mb-4"
           style={{ fontFamily: TITLE_FONTS[0], textShadow: '0 2px 16px rgba(0,0,0,0.6)' }}
         >
           Los Cabos
