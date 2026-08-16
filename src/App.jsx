@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { HeroSlideshow } from './components/IntroSlideshow'
+import { LandingPage } from './components/LandingPage'
 import { InvitationCard } from './components/InvitationCard'
 import { Greeting } from './components/Greeting'
 import { Details } from './components/Details'
@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <>
-      {!introDone && <HeroSlideshow onDone={() => setIntroDone(true)} />}
+      {!introDone && <LandingPage onDone={() => setIntroDone(true)} />}
       <div
         className={`min-h-screen flex flex-col bg-[#dbeafe] font-prata text-[#1a0505] transition-opacity duration-700 ${introDone ? 'opacity-100' : 'opacity-0'}`}
       >

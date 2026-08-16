@@ -1,6 +1,6 @@
 import ambikaSahil from "../assets/ambika-Sahil.png"
 import { IoLocation } from "react-icons/io5";
-import ganeshJi from "../assets/lordGanesh.jpg"
+import ganeshJi from "../assets/lordGanesh.png"
 
 
 export const InvitationCard = () => {
@@ -19,7 +19,7 @@ export const InvitationCard = () => {
                     src={ganeshJi}
                     alt=""
                     aria-hidden="true"
-                    className="absolute top-1 right-1 w-10 sm:w-12 h-auto object-contain pointer-events-none opacity-50"
+                    className="absolute top-1 right-1 w-8 sm:w-10 h-auto object-contain pointer-events-none opacity-50"
                 />
 
                 <p className="font-prata font-light text-center text-[0.625rem] sm:text-[0.725rem] tracking-[0.18em] text-gold uppercase mb-6 pr-8 sm:pr-10">
@@ -45,7 +45,7 @@ export const InvitationCard = () => {
                 </p>
 
                 <p className="font-prata italic inline-flex items-center gap-0.5 font-light text-[0.75rem] sm:text-[0.6875rem] tracking-[0.1em] text-gold leading-7 mb-10">
-                    Hard Rock Los Cabos<IoLocation size={20} style={{ marginBottom: '7px' }} />
+                    Hard Rock Los Cabos<IoLocation size={20} style={{ marginBottom: '10px' }} />
                     {/* <span className="inline-flex text-black items-center gap-0.5">Cabo San Lucas, Mexico<IoLocation /></span> */}
                 </p>
 
